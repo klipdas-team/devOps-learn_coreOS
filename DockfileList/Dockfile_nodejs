@@ -1,0 +1,10 @@
+FROM ubuntu:latest
+RUN apt-get update
+RUN apt-get install -y --force-yes  nodejs
+RUN apt-get install -y --force-yes  node.js
+RUN apt-get install -y --force-yes  npm
+RUN rm -rf /var/lib/apt/lists/*
+RUN apt-get clean
+RUN apt-get autoclean
+RUN apt-get autoremove
+CMD ["bash"]
